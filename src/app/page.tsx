@@ -42,9 +42,10 @@ const tech = [
 
 export default function Home() {
   const basePath = process.env.NODE_ENV === "production" ? "/clean0ps-portfolio" : "";
-  const githubUrl = "https://github.com/YOUR_USERNAME/business-analytics-toolkit";
+  const githubUrl = "https://github.com/phillipollison/business-analytics-toolkit";
   const liveAppUrl = "https://YOUR-CLEAN0PS-APP.streamlit.app";
-  const emailUrl = "mailto:YOUR_EMAIL@example.com";
+  const emailUrl = "mailto:phillip_ollison@yahoo.com";
+  const phoneUrl = "tel:+12514630279";
 
   return (
     <main className="min-h-screen bg-[#020617] text-white">
@@ -208,15 +209,31 @@ export default function Home() {
 
             <div className="rounded-3xl border border-white/10 bg-slate-950 p-6">
               <h3 className="text-xl font-black">Project Links</h3>
-              <div className="mt-5 flex flex-col gap-3">
-                <a href={liveAppUrl} className="rounded-xl bg-sky-400 px-5 py-3 text-center font-black text-slate-950 hover:bg-sky-300">
+              <div className="mt-5 space-y-4">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <p className="text-xs font-bold uppercase tracking-widest text-sky-300">Email</p>
+                  <p className="mt-1 break-all text-sm text-slate-300">phillip_ollison@yahoo.com</p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <p className="text-xs font-bold uppercase tracking-widest text-sky-300">Phone</p>
+                  <p className="mt-1 text-sm text-slate-300">(251) 463-0279</p>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <a href={emailUrl} className="rounded-xl bg-sky-400 px-5 py-3 text-center font-black text-slate-950 hover:bg-sky-300">
+                    Email Me
+                  </a>
+                  <a href={phoneUrl} className="rounded-xl bg-emerald-400 px-5 py-3 text-center font-black text-slate-950 hover:bg-emerald-300">
+                    Call Me
+                  </a>
+                </div>
+
+                <a href={liveAppUrl} className="block rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
                   Live Clean0ps App
                 </a>
-                <a href={githubUrl} className="rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
+                <a href={githubUrl} className="block rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
                   GitHub Repository
-                </a>
-                <a href={emailUrl} className="rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
-                  Contact Me
                 </a>
               </div>
             </div>
