@@ -43,7 +43,7 @@ const tech = [
 export default function Home() {
   const basePath = process.env.NODE_ENV === "production" ? "/clean0ps-portfolio" : "";
   const githubUrl = "https://github.com/phillipollison/business-analytics-toolkit";
-  const liveAppUrl = "https://YOUR-CLEAN0PS-APP.streamlit.app";
+  const liveAppUrl = "https://github.com/phillipollison/business-analytics-toolkit";
   const emailUrl = "mailto:phillip_ollison@yahoo.com";
   const phoneUrl = "tel:+12514630279";
 
@@ -83,7 +83,7 @@ export default function Home() {
                   href={liveAppUrl}
                   className="rounded-xl bg-sky-400 px-6 py-3 text-center text-sm font-black text-slate-950 shadow-lg shadow-sky-500/20 hover:bg-sky-300"
                 >
-                  View Live Clean0ps App
+                  View Clean0ps Project
                 </a>
                 <a
                   href={githubUrl}
@@ -230,7 +230,7 @@ export default function Home() {
                 </div>
 
                 <a href={liveAppUrl} className="block rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
-                  Live Clean0ps App
+                  Clean0ps Project
                 </a>
                 <a href={githubUrl} className="block rounded-xl border border-white/10 px-5 py-3 text-center font-black hover:bg-white/5">
                   GitHub Repository
