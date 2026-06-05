@@ -41,6 +41,7 @@ const tech = [
 ];
 
 export default function Home() {
+  const basePath = process.env.NODE_ENV === "production" ? "/clean0ps-portfolio" : "";
   const githubUrl = "https://github.com/YOUR_USERNAME/business-analytics-toolkit";
   const liveAppUrl = "https://YOUR-CLEAN0PS-APP.streamlit.app";
   const emailUrl = "mailto:YOUR_EMAIL@example.com";
@@ -95,7 +96,7 @@ export default function Home() {
             <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-5 shadow-2xl shadow-sky-950/40">
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
                 <img
-                  src="/profile.jpg"
+                  src={`${basePath}/profile.jpg`}
                   alt="Phillip Ollison"
                   className="h-[420px] w-full object-cover"
                 />
